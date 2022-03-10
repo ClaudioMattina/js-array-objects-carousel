@@ -12,3 +12,18 @@ Bonus 2:
 E se volessi un bottone per invertire la "direzione" del carosello?
  *
  */ 
+
+let images = ["img/01.jpg , img/02.jpg , img/03.jpg , img/04.jpg , img/05.jpg"]
+
+let bottomCarosello;
+
+let bottomCaroselloContainer = document.querySelector("div.my-thumbnails");
+
+for(i = 0; i < images.length; i++){
+    console.log(images)
+    bottomCarosello+=`<div class="botton-img-container">
+                           <img class="my-img" src="${images[i]}" alt="">
+                      </div>`
+}
+
+bottomCaroselloContainer.innerHTML += bottomCarosello;
